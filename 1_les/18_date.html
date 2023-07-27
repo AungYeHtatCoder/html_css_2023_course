@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article>
+      <h1>A good title</h1>
+      <p>This is the content of a great article.</p>
+      <footer>
+        <p>
+          Article published on
+          <time datetime="2023-09-05" pubdate>September the 5th, 2023</time>
+        </p>
+      </footer>
+    </article>
+
+    <hr />
+    <article itemscope itemType="http://schema.org/BlogPosting">
+      <h1 itemprop="headline">A good title</h1>
+      <p itemprop="articleBody">This is the content of a great article.</p>
+
+      <footer>
+        <p>
+          Article published on
+          <time datetime="2014-09-05" itemprop="datePublished"
+            >5th September 2014</time
+          >
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
